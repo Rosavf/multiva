@@ -1,0 +1,50 @@
+.table-fixed thead {
+    width: 100%;
+}
+.table-fixed tbody {
+    height: 550px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr .table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody tr td , .table-fixed thead > tr> th {
+    
+    border-bottom-width: 20px;
+}
+    
+table{
+
+      border-collapse: collapse;
+}
+
+.table-title-class{
+
+    width:160px;
+    text-align:center;
+    padding:0px;
+
+}
+
+.table-data-class{
+
+    width:80px;
+    text-align:center;
+    padding:0px;
+
+}
+
+.table-data-class a {
+
+    text-align:center;
+    margin:0px;
+    cursor: pointer;
+
+}
+
+
+
+

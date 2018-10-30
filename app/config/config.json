@@ -1,0 +1,12 @@
+{
+    "app":{
+        
+        "sitename":"MULTIVA",
+
+        "urlroute":"http://localhost/mvc",
+
+        "signature":"Derechos Reservados"
+    
+    }
+
+}
