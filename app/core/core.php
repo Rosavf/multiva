@@ -7,6 +7,7 @@ class core {
 
     public function __construct(){
 
+
         $this->router=new router();
 
         $this->router->readUrl();
@@ -14,6 +15,7 @@ class core {
         $this->router->loadController();
 
         $this->router->loadMethod();
+
 
     }
 

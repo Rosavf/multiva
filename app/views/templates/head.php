@@ -162,7 +162,7 @@
                             </li>
 
                             <li>
-                                <a href="http://localhost/multiva/control/page/login" class="waves-effect"><i class="dripicons-exit"></i> <span> Cerrar Sesion </span> </a>
+                                <a href="http://localhost/multiva/login" class="waves-effect"><i class="dripicons-exit"></i> <span> Cerrar Sesion </span> </a>
                             </li>
 
                         </ul>
