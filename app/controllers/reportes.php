@@ -20,7 +20,6 @@ class reportes extends control{
 
         $this->page('content','table1');
 
-
         $this->page('templates','feet');
         
     }
