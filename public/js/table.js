@@ -1,10 +1,14 @@
 class Table{
 
-    constructor(){
+    constructor(htmlId,json){
+
+        this.readData(json);
 
         this.tableHead();
 
         this.tableBody();
+
+        this.write(htmlId);
 
     }
 
@@ -17,88 +21,51 @@ class Table{
     tableHead(){
 
         this.head = '<thead>'
+
+        var header = Object.keys(this.data[0]);
+
         this.head+='<tr>';
-        this.head+='<td class="table-title-class">';
-        this.head+='MAINTITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">'
-        this.head+='TITLE'
-        this.head+='</td>'
-        this.head+='<td class="table-data-class">'
-        this.head+='TITLE';
-        this.head+='</td>'
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
-        this.head+='<td class="table-data-class">';
-        this.head+='TITLE';
-        this.head+='</td>';
+
+        for(var i=0; i<header.length; i++){
+
+            this.head+='<td class="table-data-class">';
+
+            this.head+=String(header[i]);
+
+            this.head+='</td>';
+
+
+        }
+
         this.head+='</tr>';
+        
         this.head+='</thead>';
 
     }
 
     tableBody(){
 
-        this.body='<tbody>'
+        this.body='<tbody>';
 
-        for (var i = 0; i < 30; i++) {
+            for(var i=0; i<this.data.length; i++){
 
-            this.body+='<tr>';
-            this.body+='<td class="table-title-class">';
-            this.body+='SUBTITLE';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">'
-            this.body+='DATA'
-            this.body+='</td>'
-            this.body+='<td class="table-data-class">'
-            this.body+='DATA';
-            this.body+='</td>'
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='<td class="table-data-class">';
-            this.body+='DATA';
-            this.body+='</td>';
-            this.body+='</tr>';
-            
-        }
+                this.body+='<tr>'
+
+                var row = this.data[i];
+
+                for(var cell in row){
+
+                    this.body+='<td class="table-data-class">'
+
+                    this.body+=String(row[cell]);
+                    
+                    this.body+='</td>';
+
+                }
+
+                this.body+='</tr>'
+
+            }
 
         this.body+='</tbody>';
 

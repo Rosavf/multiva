@@ -1,12 +1,9 @@
-
-
 $(document).ready(function(){
 
-    var table = new Table();
 
     $.ajax({
 
-        url:"http://localhost/testservice/test.php",
+        url:"http://localhost/wbrest/informe.php",
 
         method:"GET",
 
@@ -14,13 +11,13 @@ $(document).ready(function(){
 
         success:function(response){
 
-            console.log(response);
-
+            var table = new Table("#tablaMultiservicios",response);
+            
         }
 
 
     });
 
-    table.write("#tablaMultiservicios");
+
 
 });
