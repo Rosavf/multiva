@@ -102,7 +102,6 @@
         </script>
 
         <!-- jQuery  -->
-        <script src="http://localhost/multiva/assets/js/jquery.min.js"></script>
         <script src="http://localhost/multiva/assets/js/bootstrap.min.js"></script>
         <script src="http://localhost/multiva/assets/js/detect.js"></script>
         <script src="http://localhost/multiva/assets/js/fastclick.js"></script>
@@ -115,6 +114,7 @@
         <!-- App js -->
         <script src="http://localhost/multiva/assets/js/jquery.core.js"></script>
         <script src="http://localhost/multiva/assets/js/jquery.app.js"></script>
+        <script src="http://localhost/multiva/js/table.js"></script>
         <script src="http://localhost/multiva/js/main.js"></script>
 
     </body>

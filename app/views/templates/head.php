@@ -31,6 +31,8 @@
         <![endif]-->
 
         <script src="http://localhost/multiva/assets/js/modernizr.min.js"></script>
+        <script src="http://localhost/multiva/assets/js/jquery.min.js"></script>
+
 
 
     </head>
