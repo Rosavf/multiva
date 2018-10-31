@@ -26,117 +26,45 @@ class Table{
 
         this.body='<tbody>'
 
-        this.body+='<tr>';
+        for (var i = 0; i < 30; i++) {
 
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE'
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE';
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='</tr>';
-
-        this.body+='<tr>';
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE'
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE';
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='</tr>';
-
-        this.body+='<tr>';
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE'
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE';
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='</tr>';
-
-        this.body+='<tr>';
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE'
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">'
-
-        this.body+='TITLE';
-        
-        this.body+='</td>'
-
-        this.body+='<td class="table-title-class">';
-
-        this.body+='TITLE';
-        
-        this.body+='</td>';
-
-        this.body+='</tr>';
+            this.body+='<tr>';
+            this.body+='<td class="table-title-class">';
+            this.body+='SUBTITLE';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">'
+            this.body+='DATA'
+            this.body+='</td>'
+            this.body+='<td class="table-data-class">'
+            this.body+='DATA';
+            this.body+='</td>'
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='<td class="table-data-class">';
+            this.body+='DATA';
+            this.body+='</td>';
+            this.body+='</tr>';
+            
+        }
 
         this.body+='</tbody>';
 
@@ -157,8 +85,6 @@ class Table{
 }
 
 $(document).ready(function(){
-
-    alert('ok');
 
     var table = new Table();
 
