@@ -1,8 +1,8 @@
 class Table{
 
-    constructor(htmlId,json){
+    constructor(htmlId,data){
 
-        this.readData(json);
+        this.readData(data);
 
         this.tableHead();
 
@@ -12,9 +12,9 @@ class Table{
 
     }
 
-    readData(json){
+    readData(data){
 
-        this.data=JSON.parse(json);
+        this.data=JSON.parse(data);
 
     }
 
@@ -33,7 +33,6 @@ class Table{
             this.head+=String(header[i]);
 
             this.head+='</td>';
-
 
         }
 

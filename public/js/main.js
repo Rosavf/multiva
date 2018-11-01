@@ -11,7 +11,9 @@ $(document).ready(function(){
 
         success:function(response){
 
-            var table = new Table("#tablaMultiservicios",response);
+            var data = JSON.parse(response);
+
+            var table = new Table("#tablaMultiservicios",data);
             
         }
 
