@@ -14,7 +14,7 @@ class Table{
 
     readData(data){
 
-        this.data=JSON.parse(data);
+        this.data=data;
 
     }
 
